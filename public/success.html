@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleStore - Order Success</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="/index.html" class="logo">SimpleStore</a>
+
+        <div class="nav-links">
+            <a href="/index.html">Shop</a>
+
+            <a href="/cart.html">
+                Cart (<span id="nav-cart-count">0</span>)
+            </a>
+
+            <a href="/login.html" id="nav-login">Login</a>
+
+            <a href="/register.html" id="nav-register">Register</a>
+
+            <a href="#" id="nav-logout" style="display: none;">
+                Logout
+            </a>
+        </div>
+    </nav>
+</header>
+
+<div class="container"
+     style="text-align: center; margin-top: 5rem;">
+
+    <h1 style="color: #27ae60; margin-bottom: 1rem;">
+        Order Placed Successfully! 🎉
+    </h1>
+
+    <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+        Thank you for shopping with us.
+        Your order ID is
+        <strong id="order-id-display"></strong>.
+    </p>
+
+    <a href="/index.html"
+       class="btn"
+       style="width: auto;">
+        Continue Shopping
+    </a>
+
+</div>
+
+<script src="/js/api.js"></script>
+<script src="/js/success.js"></script>
+
+</body>
+</html>
