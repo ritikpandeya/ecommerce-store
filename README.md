@@ -1,153 +1,139 @@
 # Simple E-Commerce Store
 
-A beginner-friendly full-stack e-commerce web application developed as **Task 1** for the **CodeAlpha Full Stack Development Internship**.
+A beginner-friendly full-stack e-commerce web application developed as Task 1 for the CodeAlpha Full Stack Development Internship.
 
-The application provides a simple online shopping experience where users can browse products, manage their shopping cart, and interact with the e-commerce system through a clean web interface.
+The application provides a simple online shopping experience with product browsing, product details, shopping cart management, user authentication, and checkout functionality.
 
-## 🚀 Features
+## Features
 
-* 🛍️ Browse available products
-* 🔎 View product details
-* 🛒 Add products to the shopping cart
-* ➕ Increase or decrease product quantity
-* ❌ Remove products from the cart
-* 💰 Automatic cart total calculation
-* 👤 User authentication
-* 🔐 Secure password hashing using bcrypt
-* 🎟️ JWT-based authentication
-* 💾 SQLite database for storing application data
-* 📦 Automatically creates the database and sample products on first run
-* 📱 Simple and beginner-friendly user interface
+* Browse available products and view product details
+* Add products to the shopping cart
+* Increase or decrease product quantities
+* Remove products from the cart
+* Automatically calculate cart totals
+* User registration and login
+* JWT-based authentication
+* Password hashing using bcrypt
+* SQLite database integration
+* Automatic database initialization and sample product setup
+* Checkout and order-related functionality
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-### Frontend
+**Frontend**
 
 * HTML5
 * CSS3
 * Vanilla JavaScript
 
-### Backend
+**Backend**
 
 * Node.js
 * Express.js
 
-### Database
+**Database**
 
 * SQLite
 
-### Authentication & Security
+**Authentication and Security**
 
 * JSON Web Token (JWT)
 * bcrypt
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
-CodeAlpha_EcommerceStore/
-│
+ecommerce-store/
+├── middleware/
+│   └── auth.js
 ├── public/
+│   ├── css/
+│   ├── js/
 │   ├── index.html
-│   ├── style.css
-│   └── script.js
-│
+│   ├── login.html
+│   ├── register.html
+│   ├── product.html
+│   ├── cart.html
+│   ├── checkout.html
+│   └── success.html
+├── routes/
+│   ├── auth.js
+│   ├── orders.js
+│   ├── products.js
+│   └── reset-password.js
+├── database.js
 ├── server.js
 ├── package.json
 ├── package-lock.json
-├── README.md
-└── ecommerce.db
+├── .gitignore
+└── README.md
 ```
 
-> The exact file structure may vary depending on the final project files in the repository.
+## Getting Started
 
-## ⚙️ How to Run
+### Prerequisites
 
-### 1. Clone the Repository
+* Node.js and npm installed
+* Git installed
+
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/snigdhasumman3110/CodeAlpha_EcommerceStore.git
+git clone https://github.com/ritikpandeya/ecommerce-store.git
 ```
 
-### 2. Open the Project Directory
+### 2. Navigate to the project directory
 
 ```bash
-cd CodeAlpha_EcommerceStore
+cd ecommerce-store
 ```
 
-### 3. Install Dependencies
+### 3. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Start the Server
+### 4. Start the application
 
 ```bash
 npm start
 ```
 
-### 5. Open the Application
+### 5. Open in your browser
 
-Open your browser and visit:
+Visit:
 
 ```text
 http://localhost:3000
 ```
 
-The SQLite database (`ecommerce.db`) and sample products will be generated automatically when the application is run for the first time.
+The application uses SQLite for data storage. Database initialization and sample data setup are handled by the application.
 
-## 🗄️ Database
+## Authentication and Security
 
-This project uses **SQLite** as its database.
+* JWT is used for authentication.
+* bcrypt is used to hash passwords.
+* Protected routes use authentication middleware.
+* Sensitive environment configuration and local database files are excluded through `.gitignore`.
 
-The application automatically initializes the database and creates sample product data during the first run, making the project easy to set up without requiring a separate database server.
+## Future Improvements
 
-## 🔐 Authentication
-
-The application uses:
-
-* **JWT (JSON Web Tokens)** for user authentication and authorization.
-* **bcrypt** for securely hashing user passwords before storing them.
-
-## 📸 Screenshots
-
-Add screenshots of the application here to demonstrate the user interface.
-
-Example:
-
-```text
-![Home Page](screenshots/home.png)
-![Shopping Cart](screenshots/cart.png)
-![Login Page](screenshots/login.png)
-```
-
-## 🔮 Future Enhancements
-
-Some features that can be added in future versions include:
-
-* Online payment integration
+* Online payment gateway integration
 * Product search and filtering
-* Product categories
-* Product reviews and ratings
+* Product categories and reviews
 * Admin dashboard
-* Order history
-* Wishlist functionality
-* Responsive design improvements
-* Order tracking
-* Cloud database integration
+* Improved responsive design
+* Order history and tracking
 
-## 🎓 Internship Project
+## Author
 
-This project was developed as part of **Task 1 – E-Commerce Store** for the **CodeAlpha Full Stack Development Internship**.
+**Ritik Pandeya**
 
-The project demonstrates the implementation of a full-stack web application using a JavaScript-based technology stack, including frontend development, backend APIs, database integration, authentication, and basic e-commerce functionality.
+B.Tech in Computer Science and Engineering (AI/ML)
 
-## 👨‍💻 Author
+GitHub: [ritikpandeya](https://github.com/ritikpandeya)
 
-**Ritik Pandey**
+## Acknowledgement
 
-B.Tech CSE (AI/ML)
-
-## ⭐ Acknowledgement
-
-Thanks to **CodeAlpha** for providing the opportunity to work on this project as part of the Full Stack Development Internship.
+Developed as a project for the CodeAlpha Full Stack Development Internship.
